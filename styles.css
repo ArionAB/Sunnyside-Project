@@ -1,0 +1,38 @@
+.container {
+    display: grid;
+    grid-template-areas: 
+    "header header"
+    "articleLeft egg"
+    "glass artcileRight"
+    ;
+    
+}
+
+header {
+    grid-area: header;
+    background: url(./images/desktop/image-header.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    
+    
+    
+}
+
+ul li {
+    list-style-type: none;
+
+}
+
+.articleLeft {
+    grid-area: articleLeft;
+}
+
+.articleRight 
+ 
+#egg {
+    grid-area: egg;
+}
+
+#glass {
+    grid-area: glass;
+}
