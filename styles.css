@@ -107,6 +107,41 @@ header {
 
 .client {
   grid-area: client;
+  display: flex;
+  height: 100vh;
+  flex-wrap: nowrap;
+  align-items: center;
+  align-content: center;
+  position:relative;
+  text-align: center;
+  justify-content: space-evenly;
+}
+
+.client img {
+  border-radius: 50%;
+  height: 5em;
+}
+
+.client > h1 {
+  
+  align-self: flex-start;
+  /* display: inline-block; */
+  height: 5em;
+  width: 11em;
+  position: absolute;
+  top: 17%;
+  left: 45%;
+  transform: translate(-26%, -55%);
+}
+
+.first p {
+  width: 18em;
+}
+.second p {
+  width: 18em;
+}
+.third p {
+  width: 17em;
 }
 /* .client {
   grid-area: client;
@@ -143,5 +178,14 @@ header {
 
 footer {
   grid-area: bottom;
-  background-color: green;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(190, 240, 190);
+}
+
+.icons {
+  display: flex;
+    justify-content: space-between;
+    width: 15em;
 }
