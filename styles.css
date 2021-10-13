@@ -1,38 +1,90 @@
 .container {
-    display: grid;
-    grid-template-areas: 
-    "header header"
-    "articleLeft egg"
-    "glass artcileRight"
-    ;
-    
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 0.5fr;
 }
 
 header {
-    grid-area: header;
-    background: url(./images/desktop/image-header.jpg);
-    background-size: contain;
-    background-repeat: no-repeat;
-    
-    
-    
+  /* display: flex; */
+  grid-column: 1/3;
+  grid-row: 1/3;
+  height: 50%;
+  /* flex-direction: row; */
+  /* justify-content: start; */
+  flex-wrap: wrap;
+  /* align-items: flex-start; */
+  background: url(./images/desktop/image-header.jpg);
+  background-size: 100% 100%;
+  /* background-repeat: no-repeat; */
+  /* max-width: 100vw; */
+  position: relative;
+}
+
+header img {
+  display: flex;
+  position: absolute;
+  height: 14%;
+  width: 2%;
+  left: 50%;
+  top: 45%;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+#sunnyside {
+  display: flex;
+  justify-content: center;
+  color: white;
+  margin-left: 1em;
+}
+
+#creatives {
+  display: flex;
+  justify-content: center;
+  color: white;
+  margin-left: 1em;
+  color: white;
+  font-size: 4vw;
+  letter-spacing: 0.2em;
+}
+
+ul {
+  display: flex;
+  margin-right: 5em;
+  gap: 6em;
+  margin-top: 2em;
 }
 
 ul li {
-    list-style-type: none;
+  list-style-type: none;
+  color: white;
+}
 
+.eggDiv {
+  grid-column: 2/3;
+  grid-row: 2/3;
+  height: 75%;
+}
+
+#egg {
+  height: 100%;
+  width: 100%;
 }
 
 .articleLeft {
-    grid-area: articleLeft;
+  grid-column: 1/2;
+  grid-row: 2/3;
+  height: 75%;
 }
-
-.articleRight 
- 
-#egg {
-    grid-area: egg;
+.glassDiv {
+  grid-column: 1/2;
+  height: 75%;
+  width: 100%;
 }
-
 #glass {
-    grid-area: glass;
+  height: 75%;
+  width: 100%;
 }
