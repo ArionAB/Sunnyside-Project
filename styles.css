@@ -1,17 +1,15 @@
 :root {
---Soft-red: hsl(7, 99%, 70%)
---Yellow: hsl(51, 100%, 49%)
---Dark desaturated cyan (graphic design text): hsl(167, 40%, 24%)
---Dark blue (photography text): hsl(198, 62%, 26%)
---Dark moderate cyan (footer): hsl(168, 34%, 41%)
+  --Soft-red: hsl(7, 99%, 70%);
+  --Yellow: hsl(51, 100%, 49%);
+  --Dark-desaturated-cyan: hsl(167, 40%, 24%);
+  --Dark-blue: hsl(198, 62%, 26%);
+  --Dark-moderate-cyan: hsl(168, 34%, 41%);
 
-### Neutral
-
---Very dark desaturated blue: hsl(212, 27%, 19%)
---Very dark grayish blue: hsl(213, 9%, 39%)
---Dark grayish blue: hsl(232, 10%, 55%)
--- Grayish blue: hsl(210, 4%, 67%)
---White: hsl(0, 0%, 100%)
+  --dark-desaturated-blue: hsl(212, 27%, 19%);
+  --very-dark-grayish-blue: hsl(213, 9%, 39%);
+  --Dark-grayish-blue: hsl(232, 10%, 55%);
+  --Grayish-blue: hsl(210, 4%, 67%);
+  --White: hsl(0, 0%, 100%);
 }
 
 .container {
@@ -36,6 +34,16 @@ nav {
   background-color: #3ebfff;
 }
 
+header img {
+  display: flex;
+  position: absolute;
+  height: 14%;
+  width: 2%;
+  left: 50%;
+  top: 45%;
+  margin-top: 2em;
+}
+
 #sunnyside {
   display: flex;
   justify-content: center;
@@ -49,8 +57,9 @@ nav {
   color: white;
   margin-left: 1em;
   color: white;
-  font-size: 4vw;
+  font-size: 4.5vw;
   letter-spacing: 0.2em;
+  margin-top: 2em;
 }
 
 ul {
@@ -72,7 +81,38 @@ header {
 
 .articleLeft {
   grid-area: aLeft;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 12vw;
+  padding-right: 16vw;
+  background-color: cornsilk;
 }
+
+.articleLeft p {
+  font-family: "Barlow", sans-serif;
+}
+
+.articleLeft h1 {
+  align-self: self-start;
+  font-family: "Fraunces", serif;
+  font-size: 2.5em;
+}
+
+.articleLeft a {
+  align-self: self-start;
+  margin-top: 1em;
+  color: black;
+  text-decoration: underline 5px yellow;
+  font-family: "Fraunces", serif;
+}
+
+.articleLeft a:hover {
+  text-decoration: underline 5px var(--Yellow);
+}
+
 .eggDiv {
   grid-area: egg;
   background: url(./images/desktop/image-transform.jpg);
@@ -89,6 +129,36 @@ header {
 
 .articleRight {
   grid-area: aRight;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 12vw;
+  padding-right: 16vw;
+  background-color: cornsilk;
+}
+
+.articleRight p {
+  font-family: "Barlow", sans-serif;
+}
+
+.articleRight h1 {
+  align-self: self-start;
+  font-family: "Fraunces", serif;
+  font-size: 2.5em;
+}
+
+.articleRight a {
+  align-self: self-start;
+  margin-top: 1em;
+  color: black;
+  text-decoration: underline 5px rgb(246, 180, 180);
+  font-family: "Fraunces", serif;
+}
+
+.articleRight a:hover {
+  text-decoration: underline 5px var(--Soft-red);
 }
 
 .cherry {
@@ -112,7 +182,7 @@ header {
   flex-wrap: nowrap;
   align-items: center;
   align-content: center;
-  position:relative;
+  position: relative;
   text-align: center;
   justify-content: space-evenly;
 }
@@ -123,7 +193,6 @@ header {
 }
 
 .client > h1 {
-  
   align-self: flex-start;
   /* display: inline-block; */
   height: 5em;
@@ -186,6 +255,6 @@ footer {
 
 .icons {
   display: flex;
-    justify-content: space-between;
-    width: 15em;
+  justify-content: space-between;
+  width: 15em;
 }
