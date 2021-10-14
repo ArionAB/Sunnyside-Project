@@ -48,6 +48,17 @@ header img {
   margin-top: 2em;
 }
 
+#contact {
+  background-color: #ffffff;
+  border-radius: 28px;
+  border: 1px solid #fafafa;
+  cursor: pointer;
+  color: #030203;
+  font-family: Arial;
+  font-size: inherit;
+  padding: 3px 15px;
+}
+
 #sunnyside {
   display: flex;
   justify-content: center;
@@ -76,6 +87,7 @@ ul {
 ul li {
   list-style-type: none;
   color: white;
+  padding-top: 3px;
 }
 header {
   grid-area: header;
@@ -181,7 +193,7 @@ header {
 
 .cherry p {
   font-family: "Barlow", sans-serif;
-  color: var(--Dark-moderate-cyan);
+  color: var(--Dark-desaturated-cyan);
 }
 
 .cherry h1 {
@@ -323,4 +335,8 @@ footer h1 {
   width: 15em;
   padding-top: 4em;
   padding-left: 19em;
+}
+
+#hamburger {
+  display: none;
 }
